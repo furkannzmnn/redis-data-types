@@ -35,6 +35,6 @@ public class RedisSortedSet {
         redisTemplate.opsForZSet().add(key, member3, score3);
 
         // 1. sıradaki kullanıcı
-        System.out.println("1. sıradaki kullanıcı = " + redisTemplate.opsForZSet().range(key, 0, 0));
+        System.out.println("1. sıradaki kullanıcı = " + redisTemplate.opsForZSet().range(key, 0, 3));
     }
 }
